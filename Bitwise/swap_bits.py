@@ -1,0 +1,26 @@
+"""
+Date:1/01/2021
+The following program is for swapping bits in number
+Link:https://www.geeksforgeeks.org/swap-bits-in-a-given-number/
+"""
+x=28
+print(bin(x))
+p1=0
+p2=3
+n=2
+nl=0
+i=0
+while(i<p1+n):
+    nl|=(1<<i)
+    i+=1
+nr=nl
+while(i<(p2+n)):
+    nr|=(1<<i)
+    i+=1
+n_left=x&(nl^(nl>>n))
+print("n_left:{}".format(bin(n_left)))
+n_right=x&(nr^(nr>>n))
+print("n_right:{}".format(bin(n_right)))
+n_rest=x^n_left^n_right
+ans=n_rest|(n_left<<(p2-p1))|(n_right>>(p2-p1))
+print(bin(ans))
