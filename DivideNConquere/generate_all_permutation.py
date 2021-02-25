@@ -17,3 +17,7 @@ def permutation(A,cid):
         A[i],A[cid]=A[cid],A[i]
 permutation(A,0)
 print(Ans)
+
+
+
+

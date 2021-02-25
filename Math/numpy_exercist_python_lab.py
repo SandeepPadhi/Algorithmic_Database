@@ -15,6 +15,7 @@ def assignEmpAge(npEmpArr):
 def assignEmpHeight(npEmpArr): 
     for i in range(numEmp):
         npEmpArr[i]['height']=np.random.randint(120, high=160)
+        
 def findAvgs(npEmpArr):
     import time 
     st=time.process_time_ns()
@@ -49,14 +50,14 @@ for n in range(5,500,50):
     npEmpArr=np.zeros(numEmp,dtype=npEmpDataDef)
     npName=['san']*numEmp
 
-    st=time.process_time_ns()
+    #st=time.process_time_ns()
     assignEmpName(npEmpArr)
     assignEmpID(npEmpArr)
     assignEmpAge(npEmpArr)
     assignEmpHeight(npEmpArr)
     t1=findAvgs(npEmpArr)
     t2=findavgsPy(npEmpArr)
-    print("numpy/python :{}".format(t2/t1))
+    print("numpy/python :{}".format(t2/t1))+
     print("numEmp:{}".format(numEmp))
     print("")
 

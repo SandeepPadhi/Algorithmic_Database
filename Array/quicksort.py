@@ -30,6 +30,17 @@ print(A)
 
 
 """
+Quicksort 2:
+
+
+
+
+
+
+
+
+
+
 # Online Python compiler (interpreter) to run Python online.
 # Write Python 3 code in this online editor and run it.
 A=[54, 546, 548, 60,313,1,2,3,1,2,112]
