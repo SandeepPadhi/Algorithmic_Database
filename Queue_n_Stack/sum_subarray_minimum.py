@@ -14,21 +14,15 @@ class Solution:
             ind=i
             while(len(stack)>1 and arr[stack[-1]]>arr[i]):
                 p=stack.pop()
-                inter=i-p
-                left,right=p+1,1
                 right=i-p
                 left=p-stack[-1]
-                    
-                v=(right*left)*arr[p]
-                Ans+=v
-
+                Ans+=(right*left)*arr[p]
             stack.append(i)
+            
         while(len(stack)>1):
             p=stack.pop()
-            left,right=1,1
             right=len(arr)-p
             left=p-stack[-1]
-            v=(right*left)*arr[p]
-            Ans+=v
+            Ans+=(right*left)*arr[p]
         M=10**9+7    
         return Ans%M
