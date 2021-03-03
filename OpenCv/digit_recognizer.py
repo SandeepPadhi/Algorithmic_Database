@@ -177,6 +177,9 @@ class CNN(nn.Module):
 
 if __name__ == '__main__':
     network = CNN(lr=0.001, batch_size=128, epochs=4)
+    network.load_state_dict(T.load('./model.tar')['model_state_dict'])
+    #network.optimizer=T.load('./model.tar')['optimizer_state_dict']
+
     network._train()
     #plt.plot(network.loss_history)
     #plt.show()

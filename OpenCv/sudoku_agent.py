@@ -163,7 +163,7 @@ cv2.destroyAllWindows()
 
 print(sudoku)
 
-grid=sudoku
+grid=list(sudoku)
 
 
 def check(x,y,n):
@@ -195,6 +195,8 @@ def solve():
                 return
     print("Solved grid:{}".format(np.matrix(grid)))
     return np.matrix(grid)
-solve()
+Ans=solve()
+print("Ans:{}".format(Ans))
+#display(grid,points)
 
 
