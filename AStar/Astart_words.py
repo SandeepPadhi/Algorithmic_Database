@@ -42,7 +42,7 @@ game=State(start,end,[],0)
 def getdist(val,end):
     count=0
     for i in range(len(val)):
-        count+=abs(i-end.index(val[i]))**7
+        count+=abs(i-end.index(val[i]))**3
     return count
 heap=[(getdist(start,end),0,0,game)]
 
