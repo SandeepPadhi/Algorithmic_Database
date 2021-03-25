@@ -1,10 +1,12 @@
 """
 Date:3/02/2021
+
 The following program is for findiing all strongly connected Components.
 It is called Kosaraju's Algorithm for finding Strongly Connected Components
 
 Time Complexity:O(V+E)
 It uses two DFS
+
 """
 
 Edges=[(3,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,4)]
@@ -22,7 +24,7 @@ def dfs(u):
         if V[v]==False:
             dfs(v)
     P.append(u)#We are storing vertices at their departure
-
+b 
 V=[False]*N
 for i in range(1,N):
     if V[i]==False:

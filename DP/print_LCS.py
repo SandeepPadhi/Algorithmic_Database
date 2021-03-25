@@ -1,7 +1,7 @@
 
 """
 Date:4/01/2021
-The following program finds the length of Longest Common Sequence and prints it.
+The following program finds the length of Longest Common Subsequence and prints it.
 
 
 Note that in any subsequence problem Parent child relation is very important and 
@@ -24,7 +24,7 @@ print("Len of lcs:{}".format(lcs))
 R=[]
 i=m
 j=n
-while(i>1 and j>0):
+while(i>0 and j>0):
         if X[i-1]==Y[j-1]:
             R.append(X[i-1])
             i-=1

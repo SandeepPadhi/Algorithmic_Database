@@ -4,6 +4,8 @@ Date:20/03/2021
 
 VERY IMPORTANT...ONE OF THE MOST INTUITIVE PROBLEM.
 
+The problem teaches us how to apply Union-Find in 2D.We can also extend the problem to 3D easily
+
 The use of R and C to store rank in the increasing order of the values of matrix is also an important
 idea which can be used in many problems
 

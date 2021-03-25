@@ -35,7 +35,8 @@ def diameter(u):
     if len(CH)==1:
         print("depth of 1:{}".format(u))
         return CH[0]+1,max(CD[0],CH[0]+1)
-    return max(CH)+1,max(max(CD),CH[-1]+CH[-2]+1)
+        
+    return CH[-1]+1,max(CD[-1],CH[-1]+CH[-2]+1)
 
 
 

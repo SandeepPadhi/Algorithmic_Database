@@ -52,7 +52,7 @@ def AP(u):
             
             if Parent[u]==-1 and children>1:
                 result.add(u)
-            if Parent[u]!=-1 and Disc[u]<=Low[v]:#equa to because a cycle may start and end at the node
+            if Parent[u]!=-1 and Disc[u]<=Low[v]:#equal to because a cycle may start and end at the node
                 result.add(u)
                 
             

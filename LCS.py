@@ -55,5 +55,6 @@ class Solution:
             if r==1 or r==-1:
                 return r
             return -2
+            
         return Ans
 
