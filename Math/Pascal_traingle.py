@@ -15,3 +15,4 @@ class Solution:
             Ans.append(1)
             Pas.append(Ans)
         return Pas
+        
