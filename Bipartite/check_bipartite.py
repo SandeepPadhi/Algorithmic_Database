@@ -4,6 +4,8 @@
 Following problem checks if the graph is Bipartite or not using two coloring method
 We make use of & and ^ operator to accomplish our purpose
 
+The number of ways to color a bipartite graph is 2^C ,where C=No of connected components
+
 """
 
 from collections import deque
