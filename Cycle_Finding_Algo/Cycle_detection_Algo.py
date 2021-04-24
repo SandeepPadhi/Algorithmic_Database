@@ -2,6 +2,11 @@
 Date:24/04/2021
 1591. Strange Printer II - Leetcode Hard
 
+The following uses many cycle detection algorithms.The key idea that we have got from here is to build dependency graph 
+and detect cycle from it.
+
+
+
 The following problem is solved by finding cyle in dependency graph.
 Cycle is detected using following ways:
 1.)Kahn's method for topological sort
