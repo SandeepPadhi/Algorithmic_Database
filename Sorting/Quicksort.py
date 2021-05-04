@@ -2,7 +2,7 @@
 You should not use high as pivot,because if num[high] is the greatest element in the array ,
 than it will get into infinite recursion.
 
-while using randomized algorithm make use you choose from low-high-1
+while using randomized algorithm make sure you choose pivot from low-high-1
 
 Link:
 https://www.geeksforgeeks.org/hoares-vs-lomuto-partition-scheme-quicksort/
