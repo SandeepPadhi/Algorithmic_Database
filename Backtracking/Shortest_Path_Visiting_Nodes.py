@@ -5,7 +5,6 @@ Date:26/04/2021
 The following problem is solved brute force
 */
 
-
 #define MAX 15
 #define INF 1000
 

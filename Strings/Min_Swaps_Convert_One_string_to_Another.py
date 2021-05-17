@@ -2,6 +2,8 @@ A=[3,1,2]
 B=[1,2,3]
 print(A)
 
+
+#This functin takes copy of A and B and returns int
 def findMinSwaps(A,B):
     result=0
     for i in range(len(A)):

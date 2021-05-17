@@ -29,4 +29,5 @@ while(Queue):
         Indegree[u]-=1
         if Indegree[u]==0:
             Queue.append(u)
+            
 print("Result:{}".format(Result))
