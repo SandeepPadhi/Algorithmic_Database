@@ -24,12 +24,12 @@ def dfs(u):
         if V[v]==False:
             dfs(v)
     P.append(u)#We are storing vertices at their departure
-b 
+
 V=[False]*N
 for i in range(1,N):
     if V[i]==False:
         dfs(i)
-        
+
 #Reversing the graph and doing DFS
 def dfsr(u,P):
     global V

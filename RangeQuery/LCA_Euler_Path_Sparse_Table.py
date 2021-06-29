@@ -8,12 +8,12 @@ and then find the index of E betwwen those indices where L is lowest.
 
 That index gives LCA
 
-Here,we use sparse tree to LCA between two range.
+Here,we use sparse table to LCA between two range.
 
 We,build every thing using edges,then parent,child ,then Sparse Tree
 
 """
-
+import math
 
 edges=[(3,2),(2,5),(2,1),(3,7),(7,4),(7,6)]
 Parent=[i for i in range(8)]
@@ -25,6 +25,7 @@ for u,v in edges:
 H=[0 for _ in range(8)]
 E=[0]
 L=[0]
+
 #Finding root
 def findroot(Parent):
     for i in range(1,len(Parent)):
@@ -44,6 +45,7 @@ def dfs(root,E,L,H,level):
         dfs(c,E,L,H,level+1)
         L.append(level)
         E.append(root)
+
 root=findroot(Parent)
 
 print("Root is :{}".format(root))

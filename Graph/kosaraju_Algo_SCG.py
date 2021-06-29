@@ -1,9 +1,10 @@
-y
+
 """
 Date:3/02/2021
 The following program is to find if graph is Strongly Connected.
 It is called Kosaraju's Algorithm.
 """
+
 Edges=[(3,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,4)]
 Adj=[[] for i in range(10)]
 for u,v in Edges:

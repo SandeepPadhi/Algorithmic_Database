@@ -178,6 +178,7 @@ def check(x,y,n):
         for j in range((y//3)*3,(y//3)*3+3):
             if grid[i][j]==n:
                 return False
+    print("okay")
     return True
 
 def solve():
