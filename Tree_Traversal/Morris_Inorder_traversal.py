@@ -30,6 +30,7 @@ def findPredecessor(root):
 
 node=findPredecessor(root)
 def Morris_Inorder_Traversal(root):
+
     curr=root
     while(curr):
         if curr.left==None:

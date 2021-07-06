@@ -14,5 +14,6 @@ while(j<len(pat)):
             j+=1
 print("lps:{}".format(lps[-1]))
 
+
         
     

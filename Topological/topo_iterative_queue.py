@@ -14,9 +14,12 @@ for u,v in edges:
     Adj[u].append(v)
     Indegree[v]+=1
 
+
 for i in range(V):
     if Indegree[i]==0:
         Queue.append(i)
+
+
 
 while(Queue):
     m=Queue.popleft() #Here,popleft and pop (i.e stack and queue both will work)

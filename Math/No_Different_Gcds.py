@@ -5,7 +5,7 @@ class Solution:
             while(b):
                 a,b=b,a%b
             return a
-        
+                
         numset=set(nums)
         maxn=max(nums)
         ans=0

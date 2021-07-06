@@ -38,7 +38,6 @@ def isPrime(n, k):
 		return False
 	elif n == 2 or n == 3:
 		return True
-	
 	# Try k times
 	else:
 		for i in range(k):

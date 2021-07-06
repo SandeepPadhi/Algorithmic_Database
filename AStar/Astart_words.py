@@ -29,9 +29,15 @@ class State(object):
                 self.children.append(child)
 
 
-end='abcdefghijklmnopqrstuvwxyz123456789)(*&^%$#@!~QWERTYUIOPASDFGHJKLZXCVBNM'
+#end='abcdefghijklmnopqrstuvwxyz123456789)(*&^%$#@!~QWERTYUIOPASDFGHJKLZXCVBNM'
 #start='*&^%$#@!~QWERTYUIOPASDFGHJKLabcdefghijklmnopqrstuvwxyz123456789)('
-start='ZXCVBNMLKJHGFDSAPOIUYTREWQ~!@#$%^&*()987654321zyxwvutsrqponmlkjihgfedcba'
+#start='ZXCVBNMLKJHGFDSAPOIUYTREWQ~!@#$%^&*()987654321zyxwvutsrqponmlkjihgfedcba'
+
+end='abcdefghijklmnopqrstuvwxyz123456789'
+#start='*&^%$#@!~QWERTYUIOPASDFGHJKLabcdefghijklmnopqrstuvwxyz123456789)('
+start='tuvwxyz123456789abcdefghijklmnopqrs'
+
+
 
 visited=set()
 

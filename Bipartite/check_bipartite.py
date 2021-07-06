@@ -19,6 +19,7 @@ for u,v in Edges:
 isbipartite=True
 Side=[-1]*(V+1)
 Q=deque()
+
 for i in range(1,V+1):
     if Side[i]==-1:
         Side[i]=0
@@ -30,7 +31,7 @@ for i in range(1,V+1):
                     Side[v]=Side[u]^1
                     Q.append(v)
                 else:
-                    isbipartite=(Side[v]!=Side[u])
+                    isbipartite &=(Side[v]!=Side[u])
                     
 print("Side:{}".format(Side))
 print("Bipartite:{}".format("Yes" if isbipartite else "No"))

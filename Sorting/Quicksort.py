@@ -28,6 +28,7 @@ def partition(arr,low,high):
         
         if i>=j:
             return j
+        
         arr[i],arr[j]=arr[j],arr[i]
 
 def quicksort(arr,low,high):
